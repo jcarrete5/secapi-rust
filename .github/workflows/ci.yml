@@ -16,7 +16,7 @@ jobs:
           - ubuntu-24.04
           - ubuntu-24.04-arm
         rust:
-          - 1.82.0
+          - 1.78.0
           - stable
           - beta
 
@@ -28,7 +28,7 @@ jobs:
         run: sudo apt-get install -y clang
 
       - name: Checkout Source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: recursive
 
